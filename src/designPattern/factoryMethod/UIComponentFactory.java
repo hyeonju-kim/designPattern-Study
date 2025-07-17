@@ -1,7 +1,10 @@
 package designPattern.factoryMethod;
 
-
-public class UIComponentFactory { // 🎯 객체의 변경이 쉽도록 이렇게 공장클래스에 모아둔다!!!
+/**
+ *  목적(Purpose)에 따라 알맞은 UIComponent 객체(버튼, 스위치, 드롭다운)를 생성해줌
+ *   - 객체가 변경되어도 여기서만 작업하면 된다.
+ */
+public class UIComponentFactory {
 
     // 객체의 생성을 팩토리로 위임 ⭐
     public UIComponent createComponent(Purpose purpose) {

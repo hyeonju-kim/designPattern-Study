@@ -1,6 +1,8 @@
 package designPattern.factoryMethod;
 
-
+/**
+ *  컴포넌트 - 드롭다운
+ */
 public class Dropdown extends UIComponent{
     @Override
     protected String componentName() {
