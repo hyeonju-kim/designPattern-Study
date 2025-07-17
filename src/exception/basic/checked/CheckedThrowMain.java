@@ -1,0 +1,20 @@
+package exception.basic.checked;
+
+/**
+ * description    :
+ * packageName    : exception.basic.checked
+ * fileName       : CheckedThrowMain
+ * author         : 김현주
+ * date           : 25. 6. 15.
+ * ===========================================================
+ * DATE              AUTHOR             NOTE
+ * -----------------------------------------------------------
+ * 25. 6. 15.        김현주             최초 생성
+ */
+public class CheckedThrowMain {
+    public static void main(String[] args) throws MyCheckedException {
+        final Service service = new Service();
+        service.catchThrow(); // 예외가 main 밖으로 던져지며 스택트레이스를 출력하고 프로그램이 종료된다.
+        System.out.println("정상 종료"); // 이건 출력이 안된다.
+    }
+}
